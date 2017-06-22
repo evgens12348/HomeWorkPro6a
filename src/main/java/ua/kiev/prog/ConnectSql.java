@@ -20,7 +20,7 @@ public class ConnectSql {
         return connection;
     }
 
-    public static void initDB() throws SQLException {
+    public static void initDB() {
 
         try {
             Statement statement = connectDB().createStatement();
