@@ -5,7 +5,7 @@ import java.sql.*;
 public class ConnectSql {
     private static final String DB_CONNECTION = "jdbc:mysql://localhost:3306/apartment";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Vfhbyf1975";
+    private static final String DB_PASSWORD = "test";
     private static final String DB_NAME="CREATE TABLE IF NOT EXISTS apartments (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, " +
             "district VARCHAR(30) NOT NULL, address VARCHAR(60) NOT NULL, area DOUBLE NOT NULL, " +
             "number_of_rooms TINYINT NOT NULL, price DOUBLE NOT NULL, date DATE);";
