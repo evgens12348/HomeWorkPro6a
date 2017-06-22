@@ -21,11 +21,12 @@ public class ConnectSql {
     }
 
     public static void initDB() throws SQLException {
-        Statement statement = connectDB().createStatement();
+
         try {
+            Statement statement = connectDB().createStatement();
             statement.execute(DB_NAME);
-        } finally {
-            statement.close();
+        } catch (SQLException e){
+            e.printStackTrace();
         }
     }
 }

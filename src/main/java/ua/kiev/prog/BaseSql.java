@@ -7,7 +7,7 @@ import java.util.*;
 public class BaseSql {
     static Scanner sc = new Scanner(System.in);
 
-    public static void selected() throws SQLException {
+    public static void selected() {
         while (true) {
             System.out.println("1: add apartment to base");
             System.out.println("2: apartment cleaning by parameters");
