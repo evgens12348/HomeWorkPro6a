@@ -107,11 +107,14 @@ public class BaseSql {
         System.out.print("Enter address apartment: ");
         String address = sc.nextLine();
         System.out.print("Enter area apartment: ");
-        Double area = sc.nextDouble();
+        String sArea = sc.nextLine();
+        Double area = Double.parseDouble(sArea);
         System.out.print("Enter number of rooms apartment: ");
-        Byte rooms = sc.nextByte();
+        String sRooms = sc.nextLine();
+        Byte rooms = Byte.parseByte(sRooms);
         System.out.print("Enter price apartment: ");
-        Double price = sc.nextDouble();
+        String sPrice = sc.nextLine();
+        Double price = Double.parseDouble(sPrice);
         Date date = new Date(System.currentTimeMillis());
         String sql = "INSERT INTO apartments (district, address, area, number_of_rooms, price, date) VALUES (?, ?, ?, ?, ?, ?)";
 
